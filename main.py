@@ -11,7 +11,7 @@ with open(write_to_file, "w") as file:
     dw = csv.DictWriter(file, delimiter=',',
                         fieldnames=HEADER)
     dw.writeheader()
-
+a = "aboba"
 while True:
     html_text = requests.get(URL).text
     json_pars = json.loads(html_text)
